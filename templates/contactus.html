@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}contact-us{% endblock %}
+
+{% block content %}
+{% load static %}
+<h1 class="text-center mt-3">Contact Us</h1>
+<hr>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-8">
+            <img width="700px" src="{% static 'images/contact.jpg' %}">
+        </div>
+        <div class="col-md-4 mt-5">
+           <h3>
+                <p class="font-weight-bold fs-2" style="text-w">Contact us</p>
+                <a class="nav-link text-success font-weight-bold" href="#">yakstore@gmail.com</a>
+                <a class="nav-link text-success font-weight-bold" href="#">9822811673</a>
+                <a href="{% url 'yakstore:home' %}" class="btn btn-outline-danger btn-lg btn-block">Back</a>
+           </h3>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

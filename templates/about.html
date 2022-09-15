@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}about{% endblock %}
+
+{% block content %}
+{% load static %}
+<h1 class="text-center mt-3">About</h1>
+<hr>
+<div class="container-fluid">
+    <div class="mt-5">
+        <div class="card bg-dark text-white">
+          <img src="{% static 'images/banner.jpg' %}" class="card-img" alt="#">
+          <div class="card-img-overlay text-center" style="color: black;">
+            <p class="card-text">A Web Designing Company working with you, for you and by
+                you. We are completely a client driven company. Client is our  first  and
+                foremost  priority  while  working  on  any  type  of  project.  We  have
+                professionals  associated  with  us  who  have  many years of experience in
+                the field of their respective jobs.  We have experts at Discover Web Designing
+                Brisbane to carry  out the entire work for you right from the beginning of the
+                web designing process to the end of the process.</p>
+            <a href="{% url 'yakstore:home' %}" class="btn btn-outline-dark btn-lg">Back</a>
+          </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

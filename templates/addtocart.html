@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Add To Cart{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<h1 class="text-center text-success mt-3">Product successfully added to your shopping cart.</h1>
+<hr>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-8">
+            <img width="700px" src="{% static 'images/addcart.jpg' %}">
+        </div>
+        <div class="col-md-4 mt-5">
+           <h3>
+                <p class="font-weight-bold fs-2" style="text-w">check out here</p>
+                <a class="btn btn-outline-dark btn-lg" href="{% url 'yakstore:mycart' %}">View Cart</a>
+                <a href="{% url 'yakstore:product' %}" class="btn btn-outline-danger btn-lg">Back</a>
+           </h3>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

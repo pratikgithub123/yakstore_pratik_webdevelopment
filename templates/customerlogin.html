@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Customer Login{% endblock %}
+
+{% block content %}
+<style>
+    .errorlist{
+        color: red;
+    }
+</style>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h3>Customer Login</h3><hr>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+
+                <button class="btn btn-outline-primary">Customer Login</button>
+                {% if error %}
+                <li style="color: red;">{{error}}</li>
+                {% endif %}
+            </form>
+            <p>Register<a href="{% url 'yakstore:customerregistration' %}">Register Here</a></p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

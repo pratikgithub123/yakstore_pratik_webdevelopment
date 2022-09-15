@@ -1,0 +1,36 @@
+.logo{
+    text-align: center;
+}
+.logo a{
+    text-decoration: none;
+}
+#best{
+    display: block;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.header-media{
+    text-align: center;
+    font-size: 30px;
+}
+.social-top li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.social-top i:hover{
+    color: #CB2028;
+}
+
+
+.abc:hover{
+    transform: translateY(-15px);
+    transition: 0.8s;
+}
+
+
+/* ------------media query for less than 600 screen size----------- */
+@media only screen and (max-width: 600px){
+
+}
